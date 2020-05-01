@@ -8,6 +8,8 @@
     "start": "npx babel-node ./dev-server.js",
     "test": "npx babel-node ./test-server.js",
     "prepare": "npm run build",
+    "prepublish": "npm run build",
+    "postinstall": "npm run build",
     "download-webviewer": "npx @pdftron/webviewer-downloader --core-only --path ./lib",
     "cypress:open": "cypress open --project ./test/cypress",
     "cy:run": "cypress run --project \"./test/cypress\" --browser chrome",
