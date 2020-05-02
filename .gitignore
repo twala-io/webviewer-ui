@@ -8,7 +8,6 @@ webviewer-ui.zip
 notes
 static/lib
 coverage
-build
 tests
 lib
 jest.config.js
@@ -17,3 +16,4 @@ keys
 test/cypress/screenshotsFolder
 test/cypress/snapshots/**/__diff_output__/*
 package-lock.json
+.idea/

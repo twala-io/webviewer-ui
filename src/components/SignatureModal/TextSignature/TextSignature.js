@@ -23,7 +23,7 @@ const TextSignature = ({
   isTabPanelSelected,
 }) => {
   const fonts = useSelector(state => selectors.getSignatureFonts(state));
-  const [value, setValue] = useState(core.getCurrentUser());
+  const [value, setValue] = useState('');
   const [activeIndex, setActiveIndex] = useState(0);
   const inputRef = useRef();
   const canvasRef = useRef();

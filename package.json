@@ -4,7 +4,11 @@
   "version": "6.2.4",
   "description": "WebViewer UI built in React",
   "main": "src/index.js",
+  "files": [
+    "build/"
+  ],
   "scripts": {
+    "prepare": "npm run build",
     "start": "npx babel-node ./dev-server.js",
     "test": "npx babel-node ./test-server.js",
     "download-webviewer": "npx @pdftron/webviewer-downloader --core-only --path ./lib",
