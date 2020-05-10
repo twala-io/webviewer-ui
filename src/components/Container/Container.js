@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+
+import getClassName from 'helpers/getClassName';
 import selectors from 'selectors';
+
+import './Container.scss';
 
 class Container extends React.PureComponent {
   static propTypes = {
@@ -13,13 +17,14 @@ class Container extends React.PureComponent {
 
   render() {
     const { isDisabled, children } = this.props;
+    const className = getClassName('Container', this.props);
 
     if (isDisabled) {
       return null;
     }
 
     return (
-      <div data-element="viewerContainer">
+      <div className={className} data-element="viewerContainer">
         {children}
       </div>
     );
