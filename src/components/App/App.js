@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useStore } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import Container from 'components/Container';
 import Accessibility from 'components/Accessibility';
 import Header from 'components/Header';
 import ViewControlsOverlay from 'components/ViewControlsOverlay';
@@ -58,7 +59,7 @@ const App = ({ removeEventHandlers }) => {
   }, []);
 
   return (
-    <React.Fragment>
+    <Container>
       <div className="App">
         <Accessibility />
 
@@ -101,7 +102,7 @@ const App = ({ removeEventHandlers }) => {
       <FilePickerHandler />
       <CopyTextHandler />
       <FontHandler />
-    </React.Fragment>
+    </Container>
   );
 };
 
