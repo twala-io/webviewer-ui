@@ -89,7 +89,9 @@
     "underline": "Подчеркнуть",
     "custom": "Свой стиль",
     "rubberStamp": "Штамп",
-    "note": "Заметка"
+    "note": "Заметка",
+    "link": "Ссылка на сайт",
+    "other": "Другие"
   },
   "rubberStamp": {
     "Approved": "Одобренный",
@@ -378,6 +380,7 @@
     "squiggly": "(G)",
     "stamp": "(I)",
     "redo": "(Ctrl Shift Z)",
+    "redo_windows": "(Ctrl Y)",
     "undo": "(Ctrl Z)",
     "stickyNote": "(N)",
     "strikeout": "(K)",

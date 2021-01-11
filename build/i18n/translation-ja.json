@@ -89,7 +89,9 @@
     "underline": "下線",
     "custom": "カスタム",
     "rubberStamp": "ゴム印",
-    "note": "注意"
+    "note": "注意",
+    "link": "リンク",
+    "other": "その他"
   },
   "rubberStamp": {
     "Approved": "承認済み",
@@ -378,6 +380,7 @@
     "squiggly": "(G)",
     "stamp": "(I)",
     "redo": "（Ctrl Shift Z）",
+    "redo_windows": "(Ctrl Y)",
     "undo": "（Ctrl Z）",
     "stickyNote": "(N)",
     "strikeout": "(K)",
