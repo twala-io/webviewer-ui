@@ -89,7 +89,9 @@
     "underline": "Soulignage",
     "custom": "personnalisation",
     "rubberStamp": "Rubber Stamp",
-    "note": "Remarque"
+    "note": "Remarque",
+    "link": "Lien",
+    "other": "Autre"
   },
   "rubberStamp": {
     "Approved": "Approuvée",
@@ -378,6 +380,7 @@
     "squiggly": "(G)",
     "stamp": "(I)",
     "redo": "(Ctrl Shift Z)",
+    "redo_windows": "(Ctrl Y)",
     "undo": "(Ctrl Z)",
     "stickyNote": "(N)",
     "strikeout": "(K)",

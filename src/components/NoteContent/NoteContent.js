@@ -22,7 +22,7 @@ import core from 'core';
 import mentionsManager from 'helpers/MentionsManager';
 import { mapAnnotationToKey, getDataWithKey } from 'constants/map';
 import escapeHtml from 'helpers/escapeHtml';
-import getFillClass from 'helpers/getFillClass';
+import getFillColor from 'helpers/getFillColor';
 import getLatestActivityDate from 'helpers/getLatestActivityDate';
 import useDidUpdate from 'hooks/useDidUpdate';
 import actions from 'actions';
@@ -123,8 +123,9 @@ const NoteContent = ({ annotation, isEditing, setIsEditing, noteIndex, onTextCha
 
   const icon = getDataWithKey(mapAnnotationToKey(annotation)).icon;
   const color = annotation[iconColor]?.toHexString?.();
-  const fillClass = getFillClass(annotation.FillColor);
-  const contents = annotation.getContents();
+  const fillColor = getFillColor(annotation.FillColor);
+  const contents = annotation.getCustomData('trn-mention')?.contents || annotation.getContents();
+  const contentsToRender = annotation.getContents();
   const numberOfReplies = annotation.getReplies().length;
   const formatNumberOfReplies = Math.min(numberOfReplies, 9);
   // This is the text placeholder passed to the ContentArea
@@ -146,7 +147,7 @@ const NoteContent = ({ annotation, isEditing, setIsEditing, noteIndex, onTextCha
             <div className="num-replies-container">
               <div className="num-replies">{formatNumberOfReplies}</div>
             </div>}
-          <Icon className="type-icon" glyph={icon} color={color} fillClass={fillClass} />
+          <Icon className="type-icon" glyph={icon} color={color} fillColor={fillColor} />
         </div>
       }
       <div className="author-and-date">
@@ -181,8 +182,8 @@ const NoteContent = ({ annotation, isEditing, setIsEditing, noteIndex, onTextCha
             onTextAreaValueChange={onTextChange}
           />
         ) : (
-          contents && (
-            <div className="container">{renderContents(contents)}</div>
+          contentsToRender && (
+            <div className="container">{renderContents(contentsToRender)}</div>
           )
         )}
       </div>

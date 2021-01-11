@@ -89,7 +89,9 @@
     "underline": "Underline",
     "custom": "Custom",
     "rubberStamp": "Rubber Stamp",
-    "note": "Note"
+    "note": "Note",
+    "link": "Link",
+    "other": "Other"
   },
   "rubberStamp": {
     "Approved": "Approved",
@@ -378,6 +380,7 @@
     "squiggly": "(G)",
     "stamp": "(I)",
     "redo": "(Ctrl Shift Z)",
+    "redo_windows": "(Ctrl Y)",
     "undo": "(Ctrl Z)",
     "stickyNote": "(N)",
     "strikeout": "(K)",

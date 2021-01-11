@@ -26,7 +26,7 @@ it('getSelectedThumbnailPageNumbers should return even if there is only one thum
 it('rotate and delete buttons are shown if the document is not loaded from the webviewer server', async() => {
   const { iframe, waitForInstance, waitForWVEvents } = await loadViewerSample('viewing/viewing');
 
-  const instance = await waitForInstance();
+  await waitForInstance();
   await waitForWVEvents(['annotationsLoaded', 'pageComplete']);
 
   await iframe.click('[data-element=leftPanelButton]');
@@ -43,7 +43,7 @@ it('rotate and delete buttons are shown if the document is not loaded from the w
 it('rotate and delete buttons are hidden if the document is loaded from the webviewer server', async() => {
   const { iframe, waitForInstance, waitForWVEvents } = await loadViewerSample('viewing/viewing-with-webviewer-server');
 
-  const instance = await waitForInstance();
+  await waitForInstance();
   await waitForWVEvents(['annotationsLoaded', 'pageComplete']);
 
   await page.waitFor(Timeouts.PDF_PRIME_DOCUMENT);

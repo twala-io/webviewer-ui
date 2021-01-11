@@ -89,7 +89,9 @@
     "underline": "Sottolineare",
     "custom": "costume",
     "rubberStamp": "Timbro",
-    "note": "Nota"
+    "note": "Nota",
+    "link": "Collegamento",
+    "other": "Altro"
   },
   "rubberStamp": {
     "Approved": "Approvato",
@@ -378,6 +380,7 @@
     "squiggly": "(G)",
     "stamp": "(IO)",
     "redo": "(Ctrl Maiusc Z)",
+    "redo_windows": "(Ctrl Y)",
     "undo": "(Ctrl Z)",
     "stickyNote": "(N)",
     "strikeout": "(K)",
